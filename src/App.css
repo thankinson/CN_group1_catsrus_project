@@ -1,1 +1,51 @@
 /* css file */
+/* dev settings */
+/* div{
+    border: solid red 1px;
+} */
+h1, h2{
+    color: white;
+    text-align: center;
+}
+
+/* global settings */
+
+/* div settings */
+    /* general div settings. set div specific in appropreate div */
+#div-flex, #div-container, #div-header, #div-navbar, #div-maincontent{
+    display: flex;
+    flex-direction: column;
+}
+    /* Div Man Container - contains everything */
+#div-container{
+    height: 100vh;
+    width: 100vw;
+    
+}
+    /* Div header - Contents include logo and Basket */
+#div-header{
+    flex-direction: row;
+    width: 100%;
+    height: 20vh;
+    background-color: rgb(70, 70, 87);
+}
+            /* items in header settings */
+            #div-header-logo, #div-header-basket, #div-header-spacer{
+                width: 33.33%;
+                height: 100%;
+            }
+                #div-header-spacer{
+                    background-color: rgb(33, 33, 39);
+                }
+    /* Div Navbar - Contains nav bar */
+#div-navbar{
+    width: 100%;
+    height: 5vh;
+    background-color: rgb(147, 170, 170);
+}
+    /* Div Main content - contains all page content. cat pics */
+#div-maincontent{
+    width: 100%;
+    height: 100%;
+}
+

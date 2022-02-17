@@ -2,7 +2,10 @@ import './App.css';
 import Body from './components/Body';
 
 const App = () => {
-  <Body />
+  
+  return (
+    <Body />
+  )
 }
 
 export default App;
