@@ -25,7 +25,9 @@ const Basket = () => {
     };
 
     const removeItem = (index) => {
-        // TERRY'S CODE
+        let copy = [...basketItems]
+        copy.splice(index,1)
+        setBasketItems(copy)
     };
 
     return (
