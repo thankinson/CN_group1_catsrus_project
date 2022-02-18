@@ -1,51 +1,98 @@
-/* css file */
-/* dev settings */
-/* div{
-    border: solid red 1px;
-} */
-h1, h2{
+/* /// WEBSITE TITLE \\\ */
+h1 {
     color: white;
-    text-align: center;
+    text-align: left;
+    font-size: 100px;
 }
 
-/* global settings */
+#header-logo {
+    width: 800px;
 
-/* div settings */
-    /* general div settings. set div specific in appropreate div */
-#div-flex, #div-container, #div-header, #div-navbar, #div-maincontent{
+}
+
+/* /// DIV LAYOUT SETTINGS \\\ */
+#div-container, #header, #header-logo, #navbar, #maincontent {
     display: flex;
     flex-direction: column;
 }
-    /* Div Man Container - contains everything */
+
+/* /// DIV MAIN CONTAINER - CONTAINS EVERYTHING \\\ */
 #div-container{
     height: 100vh;
     width: 100vw;
     
 }
-    /* Div header - Contents include logo and Basket */
-#div-header{
+
+/* /// DIV HEADER/BANNER \\\ */
+#header{
     flex-direction: row;
     width: 100%;
-    height: 20vh;
-    background-color: rgb(70, 70, 87);
-}
-            /* items in header settings */
-            #div-header-logo, #div-header-basket, #div-header-spacer{
-                width: 33.33%;
-                height: 100%;
-            }
-                #div-header-spacer{
-                    background-color: rgb(33, 33, 39);
-                }
-    /* Div Navbar - Contains nav bar */
-#div-navbar{
-    width: 100%;
-    height: 5vh;
-    background-color: rgb(147, 170, 170);
-}
-    /* Div Main content - contains all page content. cat pics */
-#div-maincontent{
-    width: 100%;
-    height: 100%;
+    height: 13vh;
+    background-color: orange;
 }
 
+
+/* /// NAVBAR \\\ */
+#navbar{
+    width: 100%;
+    float: center;
+    line-height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#navbar a{
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-size: 30px;
+    color: white;
+    padding: 36px 10px;
+    margin: 0 1px;
+}
+#navbar a:hover{
+    color: white;
+    font-weight: 950;
+}
+
+/* /// CAT BANNER IMAGE \\\ */
+
+#cat-banner {
+    width: 100%;
+    font-size: 18px;
+    float: center;
+    text-align: center;
+ 
+
+
+}
+
+/* /// MAIN CONTENT - contains all page content. cat pics */
+#maincontent {
+    height: 62.3vh;
+    width: 100%;
+    position: fixed;;
+    top: 450px;
+    background: #ddd;
+    height: 1500;
+    border-radius: 5rem;
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: black;
+}
+
+#cat-tail {
+    width: 100%;
+    float: center;
+    text-align: center;
+    bottom: 0;
+}
+
+#tail {
+    height: 250px;
+    display: flex;
+    align-items: baseline;
+
+    
+
+}
