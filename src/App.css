@@ -93,6 +93,20 @@ h1 {
     display: flex;
     align-items: baseline;
 
-    
-
 }
+          .cat-div img{
+            max-height: 180px;
+            max-width: 200px;
+            border-radius: 10px;
+        }
+        .cat-div{
+            
+            display: flex;
+            flex-direction: column;
+            height: 30vh;
+            width: 15vw;
+            border: solid 1px red;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }

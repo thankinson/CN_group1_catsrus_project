@@ -10,6 +10,7 @@ import Basket from "./Basket";
 // import CatApi from "./CatApi";
 // import CatCost from "./catcost";
 // import Navbar from "./navbar";
+import CatArray from "./Catarray";
 
 
 
@@ -41,7 +42,10 @@ const Body = () => {
                 </div>
 
             <div id="maincontent">
+              
+                <CatArray />
             </div>
+
 
             <div id="cat-tail">
                 <img src={cattail} alt="cat-banner" id="tail"/>
