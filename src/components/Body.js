@@ -1,7 +1,10 @@
+
 import React from "react";
 import "../App.css";
 import catbanner from './images/catbanner.png'
 import cattail from './images/cattail.png'
+import Basket from "./Basket";
+
 // import AddToBasket from "./addtobasket";
 // import Basket from "./basket";
 // import CatApi from "./CatApi";
@@ -9,10 +12,16 @@ import cattail from './images/cattail.png'
 // import Navbar from "./navbar";
 
 
-const Body = () => {
 
+const Body = () => {
+    const [showBasket, updateShowBasket] = useState(true);
+    const toggleBasket = () =>{
+        updateShowBasket(!showBasket);
+    }
+    
     return (
         <div id="div-container">
+
             <div id="header">
      
                 <div id="header-logo">
@@ -22,7 +31,7 @@ const Body = () => {
                     <a href="#">HOME</a>
                     <a href="#">ABOUT US</a>
                     <a href="#">HAVE A QUESTION?</a>
-                    <a href="#">BASKET</a>
+                    <a href="#" onClick={toggleBasket}>BASKET</a>
             </div>
             </div>
 
@@ -38,6 +47,11 @@ const Body = () => {
                 <img src={cattail} alt="cat-banner" id="tail"/>
                 </div>
 
+
+            <div id="div-maincontent">
+                {showBasket ? <Basket/> : null}
+            </div>
+                
         </div>
 
     )

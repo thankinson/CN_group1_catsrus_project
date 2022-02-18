@@ -3,7 +3,11 @@ import Body from './components/Body.js';
 
 const App = () => {
 
-  return <Body />
+  
+  return (
+    <Body />
+  )
+
 }
 
 export default App;
