@@ -1,5 +1,6 @@
 // add and remove items
 import React, {useState} from "react";
+import catCost from "./Catcost.js";
 
 const Basket = () => {
 
@@ -21,7 +22,8 @@ const Basket = () => {
     
     const calculateTotal = () => {
         // PETER'S CODE
-        return 0;
+        let total = catCost(basketItems)
+        return total;
     };
        // TERRY'S CODE
     const removeItem = (index) => {
