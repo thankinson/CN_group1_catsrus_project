@@ -5,13 +5,18 @@ h1 {
     font-size: 100px;
 }
 
+button {
+    width: 125px;
+    height: 50px;
+}
+
 #header-logo {
     width: 800px;
 
 }
 
 /* /// DIV LAYOUT SETTINGS \\\ */
-#div-container, #header, #header-logo, #navbar, #maincontent {
+#div-container, #header, #header-logo, #navbar{
     display: flex;
     flex-direction: column;
 }
@@ -62,13 +67,12 @@ h1 {
     font-size: 18px;
     float: center;
     text-align: center;
- 
-
-
 }
 
 /* /// MAIN CONTENT - contains all page content. cat pics */
 #maincontent {
+    display: flex;
+    flex-wrap: wrap;
     height: 62.3vh;
     width: 100%;
     position: fixed;;
@@ -94,19 +98,54 @@ h1 {
     align-items: baseline;
 
 }
-          .cat-div img{
-            max-height: 180px;
-            max-width: 200px;
-            border-radius: 10px;
-        }
-        .cat-div{
-            
-            display: flex;
-            flex-direction: column;
-            height: 30vh;
-            width: 15vw;
-            border: solid 1px red;
-            justify-content: center;
-            align-items: center;
-            border-radius: 10px;
-        }
+.cat-div img{
+    max-height: 250px;
+    max-width: 300px;
+    border-radius: 10px;
+}
+.cat-div{
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    width: 19vw;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+/* BASKET UI (Liam) */
+
+#basket_container {
+    width: 100%;
+    height: 100%;
+    align-content: center;
+}
+
+#basket_ui{
+    margin: auto;
+    align-items: center;
+    width: 20%;
+    align-self: center;
+}
+
+.basket_ui_entry{
+    display: flex;
+    background-color: #CCCCCC;
+    margin-bottom: 2px;
+}
+
+.basket_ui_entry button{
+    height: auto;
+}
+
+.basket_ui_left{
+    margin-right: auto;
+}
+
+.basket_ui_right{
+    margin-left: auto;
+} 
+
+#basket_ui_label {
+    display: flex;
+}
