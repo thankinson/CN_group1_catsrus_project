@@ -25,26 +25,26 @@ const CatApi = () => {
     }, [])
 }
 
-const catDescription = {
-   name = faker.name.firstName(),
-   breed = faker.animal.cat(),
-   music = faker.music.genre(),
-   toy = faker.commerce.product(),
-   car = faker.vehicle.manufacturer(),
-   price = faker.commerce.price(50, 500, '£'),
+// const catDescription = {
+//    name = faker.name.firstName(),
+//    breed = faker.animal.cat(),
+//    music = faker.music.genre(),
+//    toy = faker.commerce.product(),
+//    car = faker.vehicle.manufacturer(),
+//    price = faker.commerce.price(50, 500, '£'),
 
-};
-    return(
-        `Name: ${name}, 
-        Breed: ${breed},
-        Favourite type of music: ${music}, 
-        Favourite toy: ${toy},
-        Favourite car: ${car},
-        Price: ${price}
-        `)
+// };
+//     return(
+//         `Name: ${name}, 
+//         Breed: ${breed},
+//         Favourite type of music: ${music}, 
+//         Favourite toy: ${toy},
+//         Favourite car: ${car},
+//         Price: ${price}
+//         `)
 
 // this faker data needs to be fetched somehow according to Leon
 
 
 export default CatApi
-export default catDescription 
+// export default catDescription 

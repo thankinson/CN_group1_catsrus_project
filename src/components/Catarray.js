@@ -1,20 +1,19 @@
 import { React, useState, useEffect } from "react";
-
-
+import CatApi from "./Catapi";
 
 const CatArray =  () =>{
-    const [catsArray, setCatArray] = useState("");
+    const [catsArray, setCatArray] = useState(CatApi());
     
-    const CollectCats = async () => {
-    const response = await fetch("https://api.thecatapi.com/v1/images/search?limit=12&page=1&order=Desc");
-    const catImages = await response.json();
-    console.log(catImages)
-    setCatArray(catImages)
-    }
+//     const CollectCats = async () => {
+//     const response = await fetch("https://api.thecatapi.com/v1/images/search?limit=12&page=1&order=Desc");
+//     const catImages = await response.json();
+//     console.log(catImages)
+//     setCatArray(catImages)
+//     }
 
-    useEffect(()=>{
-    CollectCats()
-}, [])
+//     useEffect(()=>{
+//     CollectCats()
+// }, [])
 
 
     if (!catsArray){

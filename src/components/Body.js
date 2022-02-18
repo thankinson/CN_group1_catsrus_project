@@ -4,13 +4,13 @@ import "../App.css";
 import catbanner from './images/catbanner.png'
 import cattail from './images/cattail.png'
 import Basket from "./Basket";
-
+import CatCost from "./Catcost"
 // import AddToBasket from "./addtobasket";
 // import Basket from "./basket";
 // import CatApi from "./CatApi";
 // import CatCost from "./catcost";
 // import Navbar from "./navbar";
-import CatArray from "./Catarray";
+
 
 
 
@@ -42,8 +42,7 @@ const Body = () => {
                 </div>
 
             <div id="maincontent">
-              
-                <CatArray />
+                {/* <CatArray /> */}
             </div>
 
 
