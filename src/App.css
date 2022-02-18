@@ -55,7 +55,7 @@ button {
     padding: 36px 10px;
     margin: 0 1px;
 }
-#navbar a:hover{
+#navbar h2:hover{
     color: white;
     font-weight: 950;
 }

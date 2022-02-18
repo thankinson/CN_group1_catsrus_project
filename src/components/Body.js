@@ -90,10 +90,10 @@ const Body = () => {
                     <h1>Cats R Us</h1>
                 </div>
                 <div id="navbar">
-                    <a >HOME</a>
-                    <a >ABOUT US</a>
-                    <a >HAVE A QUESTION?</a>
-                    <a onClick={() => toggleBasket()}>BASKET</a>
+                    <h2 >HOME</h2>
+                    <h2 >ABOUT US</h2>
+                    <h2 >HAVE A QUESTION?</h2>
+                    <h2 onClick={() => toggleBasket()}>BASKET</h2>
             </div>
             </div>
 
