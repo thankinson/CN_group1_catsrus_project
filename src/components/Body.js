@@ -5,6 +5,7 @@ import "../App.css";
 // import CatApi from "./CatApi";
 // import CatCost from "./catcost";
 // import Navbar from "./navbar";
+import CatArray from "./Catarray";
 
 const Body = () => {
 
@@ -22,7 +23,11 @@ const Body = () => {
 
             <div id="div-navbar"><h3>Nav bar</h3></div>
             
-            <div id="div-maincontent"></div>
+            <div id="div-maincontent">
+
+                <CatArray />
+
+            </div>
 
         </div>
     )
