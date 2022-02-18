@@ -1,8 +1,9 @@
 import './App.css';
-import Body from './components/Body';
+import Body from './components/Body.js';
 
 const App = () => {
-  <Body />
+
+  return <Body />
 }
 
 export default App;
