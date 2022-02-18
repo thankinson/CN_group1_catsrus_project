@@ -23,7 +23,7 @@ const Basket = () => {
         // PETER'S CODE
         return 0;
     };
-
+       // TERRY'S CODE
     const removeItem = (index) => {
         let copy = [...basketItems]
         copy.splice(index,1)

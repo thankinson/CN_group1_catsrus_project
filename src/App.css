@@ -49,24 +49,3 @@ h1, h2{
     height: 100%;
 }
 
-/* BASKET UI (Liam) */
-
-#basket_ui{
-    width: 20%;
-    align-self: center;
-
-}
-
-.basket_ui_entry{
-    display: flex;
-    background-color: red;
-    margin-bottom: 2px;
-}
-
-.basket_ui_left{
-    margin-right: auto;
-}
-
-.basket_ui_right{
-    margin-left: auto;
-}
