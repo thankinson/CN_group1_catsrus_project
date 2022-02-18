@@ -110,7 +110,7 @@ const Body = () => {
                         return (    
                             <div className="cat-div">
                                 <div id="cat-img-div">
-                                    <img src={catObj.img}/>
+                                    <img src={catObj.img} alt="cats"/>
                                 </div> 
                                 <div id="cat-price-div">
                                     <p>{catObj.name} - £{catObj.price}</p>
