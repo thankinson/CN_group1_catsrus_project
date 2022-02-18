@@ -1,5 +1,10 @@
+
 import React from "react";
 import "../App.css";
+import catbanner from './images/catbanner.png'
+import cattail from './images/cattail.png'
+import Basket from "./Basket";
+
 // import AddToBasket from "./addtobasket";
 // import Basket from "./basket";
 // import CatApi from "./CatApi";
@@ -7,32 +12,54 @@ import "../App.css";
 // import Navbar from "./navbar";
 import CatArray from "./Catarray";
 
-const Body = () => {
 
+
+const Body = () => {
+    const [showBasket, updateShowBasket] = useState(true);
+    const toggleBasket = () =>{
+        updateShowBasket(!showBasket);
+    }
+    
     return (
         <div id="div-container">
-            <div id="div-header">
+
+            <div id="header">
      
-                <div id="div-header-logo">
-                    <h1>Logo/Title</h1>
+                <div id="header-logo">
+                    <h1>Cats R Us</h1>
                 </div>
-                <div id="div-header-spacer"><h2>Empty Space</h2></div>
-                <div id="div-header-basket"><h1>Basket</h1></div>
-
+                <div id="navbar">
+                    <a href="#">HOME</a>
+                    <a href="#">ABOUT US</a>
+                    <a href="#">HAVE A QUESTION?</a>
+                    <a href="#" onClick={toggleBasket}>BASKET</a>
+            </div>
             </div>
 
-            <div id="div-navbar"><h3>Nav bar</h3></div>
-            
-            <div id="div-maincontent">
+            <div id="cat-banner">
+                <h2>Our furry frinds need a new loving home!</h2>
+                <img src={catbanner} alt="cat-banner"/>
+                </div>
 
+            <div id="maincontent">
+              
                 <CatArray />
-
             </div>
 
+
+            <div id="cat-tail">
+                <img src={cattail} alt="cat-banner" id="tail"/>
+                </div>
+
+
+            <div id="div-maincontent">
+                {showBasket ? <Basket/> : null}
+            </div>
+                
         </div>
+
     )
 
 }
-
 
 export default Body
