@@ -5,7 +5,6 @@ import cattail from './images/cattail.png'
 import catCost from "./Catcost.js";
 const { faker } = require('@faker-js/faker');
 
-
 const Body = () => {
     const [showBasket, updateShowBasket] = useState(false);
     const [catsArray, setCatArray] = useState();
@@ -18,7 +17,7 @@ const Body = () => {
     const catApi = async () => {
 
         try {
-            const response = await fetch("https://api.thecatapi.com/v1/images/search?limit=10&page=10&order=Desc")
+            const response = await fetch("https://api.thecatapi.com/v1/images/search?limit=12&page=10&order=Desc")
             const data = await response.json()
 
             let outputArray = [];
@@ -61,6 +60,7 @@ const Body = () => {
     };
 
     const Basket = () => {
+        // bascket div
         return (
             <div id="basket_ui">
                 <div id="basket_ui_label"><p>Basket</p><button className="basket_ui_right" onClick={toggleBasket}>Close Basket</button></div>
@@ -75,12 +75,12 @@ const Body = () => {
                         );
                     })}
                 </div>
-                <p>Price: £{calculateTotal()}</p>
+                <div id="basket_ui_price"><p>Price: £{calculateTotal()}</p></div>
             </div>
         );
     }
 
-
+// page
     return (
         <div id="div-container">
 
@@ -98,9 +98,9 @@ const Body = () => {
             </div>
 
             <div id="cat-banner">
-                <h2>Our furry friends need a new loving home!</h2>
-                <img src={catbanner} alt="cat-banner"/>
-                </div>
+                <div className="div-banner"><h2>Our furry friends need a new loving home!</h2></div>
+                <div className="div-banner"><img id="img-banner" src={catbanner} alt="cat-banner"/></div>
+            </div>
 
             <div id="maincontent">
                 {showBasket ? <div id="basket_container"><Basket/></div> : null}
@@ -125,9 +125,9 @@ const Body = () => {
             </div>
 
 
-            <div id="cat-tail">
+            {/* <div id="cat-tail">
                 <img src={cattail} alt="cat-banner" id="tail"/>
-            </div>  
+            </div>   */}
         </div>
 
     )
