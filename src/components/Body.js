@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import "../App.css";
 import catbanner from './images/catbanner.png'
-import cattail from './images/cattail.png'
+// import cattail from './images/cattail.png'
 import catCost from "./Catcost.js";
 const { faker } = require('@faker-js/faker');
 
